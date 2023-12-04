@@ -4,6 +4,7 @@ import struct
 
 from vidgear.gears import VideoGear
 
+FRAME_BATCH_SIZE = 16
 INPUT_FILE = "/Users/ivavse/temp/nets/Poopy-di-Scoop.mp4"
 
 
@@ -20,17 +21,29 @@ def main():
         return data
 
     while True:
-        data = get_raw_frame()
-        print(f"{len(data)=}")
-        if len(data) == 4:
-            print(data)
+        raw_frames = []
+        for frame_number in range(FRAME_BATCH_SIZE):
+            data = get_raw_frame()
+            if len(data) == 4:
+                # end of frames
+                break
+            frame_number_raw = struct.pack("L", frame_number)
+            frame_size_raw = struct.pack("L", len(data))
+            raw_frame = frame_number_raw + frame_size_raw + data
+            raw_frames.append(raw_frame)
+
+        if len(raw_frames) == 0:
             break
 
         # Send message length first
-        message_size = struct.pack("L", len(data))
-        raw_message = message_size + data
+        frame_count_raw = struct.pack("L", len(raw_frames))
+        packed_frames = struct.pack(''.join([str(len(x)) + 's' for x in raw_frames]), *raw_frames)
+        raw_message = frame_count_raw + packed_frames
         # Then data
         clientsocket.sendall(raw_message)
+
+        if len(raw_frames) != FRAME_BATCH_SIZE:
+            break
 
     raw_message = struct.pack("L", 0)
     clientsocket.sendall(raw_message)

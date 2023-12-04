@@ -1,6 +1,7 @@
 import asyncio
 import pickle
 import struct
+import time
 
 import cv2
 
@@ -13,6 +14,7 @@ CHUNK_SIZE = 4096
 class ServerFetcher:
     def __init__(self) -> None:
         self.frame_buffer = asyncio.Queue()
+        self.data = bytes()
 
     async def start_server(self):
         self.server = await asyncio.start_server(self.handle_conn, HOST, PORT)
@@ -28,36 +30,39 @@ class ServerFetcher:
     async def recv(self, n: int):
         return await self.reader.read(n)
 
+    async def recv_data(self, size: int):
+        while len(self.data) < size:
+            self.data += await self.recv(CHUNK_SIZE)
+        msg = self.data[:size]
+        self.data = self.data[size:]
+        return msg
+
     def sync_run(self):
         asyncio.run(self.run())
 
-    async def run(self):
-        data = bytes()
-        payload_size = struct.calcsize("L")
+    async def fetch_frames(self):
+        packed_frame_count = await self.recv_data(struct.calcsize("L"))
+        frame_count = struct.unpack("L", packed_frame_count)[0]
 
-        for i in range(10000):
-            while len(data) < payload_size:
-                data += await self.recv(CHUNK_SIZE)
-
-            packed_msg_size = data[:payload_size]
-            data = data[payload_size:]
-            msg_size = struct.unpack("L", packed_msg_size)[0]
-
-            if msg_size == 0:
-                print("recived end of communication message")
-                return
-
-            while len(data) < msg_size:
-                data += await self.recv(CHUNK_SIZE)
-
-            frame_data = data[:msg_size]
-            data = data[msg_size:]
-
+        frames = []
+        for frame_i in range(frame_count):
+            packed_frame_meta = await self.recv_data(struct.calcsize("LL"))
+            frame_number, frame_size = struct.unpack("LL", packed_frame_meta)
+            frame_data = await self.recv_data(frame_size)
             # Extract frame
             frame = pickle.loads(frame_data)
+            frames.append(frame)
+        return frames
 
-            print(f"[{i}] recived frame: {len(frame)}")
-            await self.frame_buffer.put(frame)
+    async def run(self):
+        for i in range(10000):
+            frames = await self.fetch_frames()
+            if len(frames) == 0:
+                print("recived end of communication message")
+
+            print(f"[{i}] recived {len(frames)} frames")
+            for frame in frames:
+                await self.frame_buffer.put(frame)
 
         self.server.close()
 
@@ -71,9 +76,10 @@ def run_fetcher(fetcher: ServerFetcher):
 
 async def main():
     fetcher = ServerFetcher()
-    asyncio.create_task(asyncio.to_thread(run_fetcher, fetcher))
+    task = asyncio.create_task(asyncio.to_thread(run_fetcher, fetcher))
 
     print("start display loop")
+    t = time.time()
     for i in range(10000):
         frame = None
         for timeout_retry in range(5):
@@ -86,11 +92,13 @@ async def main():
         if frame is None:
             break
 
-        print(f"[{i}] displaying frame: {len(frame)}")
+        print(f"[{i}] displaying frame, delay={time.time() - t}")
+        t = time.time()
         cv2.imshow("frame", frame)
         cv2.waitKey(1)
 
-    cv2.imshow("frame", None)
+    # cv2.imshow("frame", None)
+    task.cancel()
 
 
 if __name__ == "__main__":
