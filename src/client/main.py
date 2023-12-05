@@ -1,21 +1,31 @@
+from dataclasses import dataclass
 import asyncio
+import cv2
 import pickle
 import struct
 import time
 
-import cv2
-
-HOST = ""
-PORT = 8089
 
 WINNAME = "frame"
 CHUNK_SIZE = 4096
+FRAME_RATE = 30
+FRAME_DELAY = 1 / FRAME_RATE
+
+
+@dataclass
+class FrameDistribution:
+    endpoint: str
+    begin_frame: int
+    end_frame: int
 
 
 class ServerFetcher:
-    def __init__(self) -> None:
+    def __init__(self, distribution: FrameDistribution) -> None:
+        self.distribution = distribution
+        self.batch_size = 10
         self.frame_buffer = asyncio.Queue()
         self.data = bytes()
+        self.all_fetched = False
 
     async def recv(self, n: int):
         return await self.reader.read(n)
@@ -41,12 +51,20 @@ class ServerFetcher:
             frames.append(frame)
         return frames
 
-    async def run(self):
-        frame_index = 0
-        for i in range(10000):
-            self.reader, self.writer = await asyncio.open_connection(HOST, PORT)
+    def sync_run(self):
+        asyncio.run(self.run())
 
-            self.writer.write(struct.pack("LL", frame_index, 16))
+    async def run(self):
+        host, port = self.distribution.endpoint.split(":")
+
+        for frame_index in range(
+            self.distribution.begin_frame,
+            self.distribution.end_frame + 1,
+            self.batch_size,
+        ):
+            self.reader, self.writer = await asyncio.open_connection(host, port)
+
+            self.writer.write(struct.pack("LL", frame_index, self.batch_size))
             await self.writer.drain()
 
             frames = await self.fetch_frames()
@@ -54,29 +72,102 @@ class ServerFetcher:
                 print(f"recived end of communication message {frame_index}")
                 break
 
-            print(f"[{i}] recived {len(frames)} frames")
+            print(f"recived frames: {frame_index}-{frame_index+len(frames)-1}")
             for frame in frames:
                 await self.frame_buffer.put(frame)
-                frame_index += 1
             self.writer.close()
             await self.writer.wait_closed()
+        self.all_fetched = True
+
+    def is_done(self):
+        return self.all_fetched and self.frame_buffer.empty()
 
 
-def run_fetcher(fetcher: ServerFetcher):
-    asyncio.run(fetcher.run())
+class DownloadMaster:
+    def __init__(self) -> None:
+        self.master_endpoint = None  # TODO
+        self.unfetched_distributions: list[FrameDistribution] = []
+        self.fetchers: list[ServerFetcher] = []
+
+        self.all_distibution_fetched = False
+        self.fetchers_n = 2
+
+    def sync_start(self):
+        asyncio.run(self.start())
+
+    async def start(self):
+        await self.fetch_distibution()
+        for _ in range(self.fetchers_n):
+            await self.run_next_fetcher()
+
+    async def fetch_distibution(self):
+        # TODO
+        endpoints = [
+            "localhost:8090",
+            "localhost:8091",
+        ]
+        self.unfetched_distributions = [
+            FrameDistribution(endpoints[i % 2], i * 100, i * 100 + 99)
+            for i in range(0, 5)
+        ]
+        self.all_distibution_fetched = True
+
+    async def run_next_fetcher(self) -> bool:
+        if len(self.unfetched_distributions) == 0:
+            if self.all_distibution_fetched:
+                # no more distributions left
+                return False
+            await self.fetch_distibution()
+
+        if len(self.unfetched_distributions) == 0:
+            return False
+
+        distribution = self.unfetched_distributions.pop(0)
+        fetcher = ServerFetcher(distribution)
+        self.fetchers.append(fetcher)
+        asyncio.create_task(asyncio.to_thread(fetcher.sync_run))
+        return True
+
+    async def get_current_fetcher(self):
+        while len(self.fetchers) and self.fetchers[0].is_done():
+            done_fetcher = self.fetchers.pop(0)
+            print(f"{done_fetcher.distribution=}")
+
+        if len(self.fetchers):
+            current_fetcher = self.fetchers[0]
+            if len(self.fetchers) < self.fetchers_n:
+                asyncio.create_task(self.run_next_fetcher())
+        else:
+            launched = await self.run_next_fetcher()
+            if not launched:
+                return None
+            current_fetcher = self.fetchers[0]
+
+        return current_fetcher
+
+    async def get_next_frame(self, timeout: float | None):
+        current_fetcher = await self.get_current_fetcher()
+        if current_fetcher is None:
+            return None
+
+        return await asyncio.wait_for(
+            current_fetcher.frame_buffer.get(),
+            timeout=timeout,
+        )
 
 
 async def main():
-    fetcher = ServerFetcher()
-    task = asyncio.create_task(asyncio.to_thread(run_fetcher, fetcher))
+    master = DownloadMaster()
+    task = asyncio.create_task(asyncio.to_thread(master.sync_start))
 
+    await asyncio.sleep(2)
     print("start display loop")
     t = time.time()
     for i in range(10000):
         frame = None
-        for timeout_retry in range(5):
+        for _ in range(5):
             try:
-                frame = await asyncio.wait_for(fetcher.frame_buffer.get(), timeout=1)
+                frame = await master.get_next_frame(timeout=1.0)
                 break
             except TimeoutError:
                 print("timeout")
@@ -85,8 +176,9 @@ async def main():
             break
 
         time_spent = time.time() - t
-        to_wait = max(0, 1 / 30 - time_spent)
-        print(f"[{i}] displaying frame, delay={time.time() - t:.3f}, {to_wait=:.3f}")
+        to_wait = max(0, FRAME_DELAY - time_spent)
+        if to_wait == 0:
+            print(f"frame {i}, DELAY IS TOO BIG: {time_spent:.3f} sec")
         await asyncio.sleep(to_wait)
 
         t = time.time()

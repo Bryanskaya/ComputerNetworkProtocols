@@ -1,3 +1,4 @@
+import argparse
 import asyncio
 import socket
 import pickle
@@ -5,11 +6,8 @@ import struct
 
 import cv2
 
-HOST = "localhost"
-PORT = 8089
 
 CHUNK_SIZE = 4096
-FRAME_BATCH_SIZE = 16
 INPUT_FILE = "/Users/ivavse/temp/nets/Poopy-di-Scoop.mp4"
 
 
@@ -25,6 +23,7 @@ class Server:
 
     async def start_server(self, host, port):
         self.server = await asyncio.start_server(self.handle_request, host, port)
+        print(f"server started on the endpoint {host}:{port}")
         await self.server.serve_forever()
 
     async def read_request(self, reader: asyncio.StreamReader):
@@ -36,7 +35,9 @@ class Server:
         return frame_offset, frame_count
 
     async def handle_request(
-        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+        self,
+        reader: asyncio.StreamReader,
+        writer: asyncio.StreamWriter,
     ):
         frame_offset, frame_count = await self.read_request(reader)
         print(f"request: {frame_offset}-{frame_offset+frame_count-1}")
@@ -64,8 +65,14 @@ class Server:
 
 
 async def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--port", type=int, required=True, help="Run server on this port"
+    )
+    args = parser.parse_args()
+
     server = Server()
-    await server.start_server(HOST, PORT)
+    await server.start_server("localhost", int(args.port))
     await server.server.wait_closed()
 
 
