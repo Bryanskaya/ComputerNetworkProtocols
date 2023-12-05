@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  3 DEC 2023 12:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  6 DEC 2023 00:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -1366,8 +1366,8 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 LaTeX Warning: Unused global option(s):
     [ut8x].
 
-(main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/50-conclusion.aux)
-(inc/60-bibliography.aux) (inc/70-application.aux))
+(main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
+(inc/50-conclusion.aux) (inc/60-bibliography.aux) (inc/70-application.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1624,15 +1624,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[7]
+Overfull \hbox (3.4077pt too wide) in paragraph at lines 63--64
+[]\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, каждое утро понедельника классны
+е руководители по всей
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
+
+Overfull \hbox (0.94714pt too wide) in paragraph at lines 72--73
+\TU/TimesNewRoman(0)/m/n/14.4 Поддерживается большинством популярных браузеров,
+ работающих в си-
+ []
+
+[8]
+Overfull \hbox (1.73659pt too wide) in paragraph at lines 84--85
+[]\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, в данной работе будет разрабатыв
+аться протокол для муль-
+ []
+
+
+Overfull \hbox (3.63321pt too wide) in paragraph at lines 84--85
+\TU/TimesNewRoman(0)/m/n/14.4 тисерверного видеостриминга с множественными исто
+чниками. В качестве фор-
+ []
+
 ) [9]
+\openout2 = `inc/20-design.aux'.
+
+ (inc/20-design.tex
+File: img/[general][master].pdf Graphic file (type pdf)
+<use img/[general][master].pdf>
+File: img/[items][master][auth].pdf Graphic file (type pdf)
+<use img/[items][master][auth].pdf>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
+
+
+
+] [11]
+File: img/[items][master][share].pdf Graphic file (type pdf)
+<use img/[items][master][share].pdf>
+
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 176--176
+[]|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
+ []
+
+
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 181--181
+[]|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
+ []
+
+[12]
+Underfull \hbox (badness 1005) in paragraph at lines 208--209
+[]|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
+ []
+
+[13]
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 280--280
+[]|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
+ []
+
+
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 285--285
+[]|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
+ []
+
+
+Overfull \hbox (5.15726pt too wide) in paragraph at lines 289--290
+[]\TU/TimesNewRoman(0)/m/n/14.4 Отправляя «Запрос типа 2» клиент инициирует пов
+торную операцию опре-
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 312--313
+[]|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
+ []
+
+[14]
+Overfull \hbox (11.29597pt too wide) in paragraph at lines 351--352
+\TU/TimesNewRoman(0)/m/n/14.4 осуществляется одновременное скачивание сразу нес
+кольких частей видео-файла
+ []
+
+File: img/[general][media].pdf Graphic file (type pdf)
+<use img/[general][media].pdf>
+
+Overfull \hbox (0.871pt too wide) in paragraph at lines 361--362
+\TU/TimesNewRoman(0)/m/n/14.4 лельные запросы («Запрос типа 3» таблица [][]8[][
+]) к медиа-серверам будут осуществ-
+ []
+
+[15]
+File: img/[items][media].pdf Graphic file (type pdf)
+<use img/[items][media].pdf>
+ [16]) [17]
 \openout2 = `inc/50-conclusion.aux'.
 
- (inc/50-conclusion.tex) [10
+ (inc/50-conclusion.tex) [18
 
 
 
@@ -1645,48 +1741,31 @@ Underfull \hbox (badness 6204) in paragraph at lines 7--8
 hts.com/video-streaming-
  []
 
-[11
+) [19
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-[]\TU/TimesNewRoman(0)/m/n/14.4 SYN cookies [Электронный ресурс]. – Режим досту
-па:
- []
-
-
-Underfull \hbox (badness 5203) in paragraph at lines 28--29
-[]\TU/TimesNewRoman(0)/m/n/14.4 SYN cookies source code [Электронный ресурс]. –
- Режим доступа:
- []
-
-) [12]
 \openout2 = `inc/70-application.aux'.
 
- (inc/70-application.tex) [13
+ (inc/70-application.tex) [20
 
 
 
-]
-
-Package caption Warning: Unused \captionsetup[table] on input line 49.
-See the caption package documentation for explanation.
-
-
+] 
 AED: lastpage setting LastPage
-(main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/50-conclusion.aux)
-(inc/60-bibliography.aux) (inc/70-application.aux))
+(main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
+(inc/50-conclusion.aux) (inc/60-bibliography.aux) (inc/70-application.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 09A55925404D35E277ED22501258571B;1692.
+(rerunfilecheck)             Checksum: 0A30ACB67138F45C13E1623F44CEB9ED;3075.
  ) 
 Here is how much of TeX's memory you used:
- 39406 strings out of 411059
- 917704 string characters out of 2830150
- 1444850 words of memory out of 3000000
- 59370 multiletter control sequences out of 15000+600000
- 408853 words of font info for 86 fonts, out of 8000000 for 9000
+ 39508 strings out of 411059
+ 920453 string characters out of 2830150
+ 1453849 words of memory out of 3000000
+ 59457 multiletter control sequences out of 15000+600000
+ 411468 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,17n,99p,729b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (13 pages).
+Output written on main.pdf (20 pages).

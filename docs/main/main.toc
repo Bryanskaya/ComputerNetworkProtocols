@@ -4,6 +4,12 @@
 \contentsline {subsection}{\numberline {1.1}Основные понятия}{5}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Возможные сферы применения и целевая аудитория}{7}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Форматы видеорядов}{8}{subsection.1.3}%
-\contentsline {section}{ЗАКЛЮЧЕНИЕ}{10}{figure.caption.1}%
-\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{11}{figure.caption.1}%
-\contentsline {section}{ПРИЛОЖЕНИЕ A}{13}{figure.caption.1}%
+\contentsline {section}{\numberline {2}Конструкторская часть}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Взаимодействие клиента и мастер-сервера}{10}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Общая схема}{10}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Авторизация}{10}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Получение списка хостов}{12}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Получение видеофрагментов}{15}{subsubsection.2.1.4}%
+\contentsline {section}{ЗАКЛЮЧЕНИЕ}{18}{table.9}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{19}{table.9}%
+\contentsline {section}{ПРИЛОЖЕНИЕ A}{20}{table.9}%
