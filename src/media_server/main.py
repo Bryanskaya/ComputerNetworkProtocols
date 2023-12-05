@@ -1,29 +1,49 @@
+import asyncio
 import socket
 import pickle
 import struct
 
-from vidgear.gears import VideoGear
+import cv2
 
+HOST = "localhost"
+PORT = 8089
+
+CHUNK_SIZE = 4096
 FRAME_BATCH_SIZE = 16
 INPUT_FILE = "/Users/ivavse/temp/nets/Poopy-di-Scoop.mp4"
 
 
-def main():
-    stream = VideoGear(source=INPUT_FILE).start()
+class Server:
+    def __init__(self) -> None:
+        self.stream = cv2.VideoCapture(filename=INPUT_FILE)
 
-    clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    clientsocket.connect(("localhost", 8089))
-
-    def get_raw_frame() -> bytes:
-        frame = stream.read()
-        # Serialize frame
+    def get_raw_frame(self, offset: int) -> bytes:
+        self.stream.set(cv2.CAP_PROP_POS_FRAMES, offset)
+        ret, frame = self.stream.read()
         data = pickle.dumps(frame)
         return data
 
-    while True:
+    async def start_server(self, host, port):
+        self.server = await asyncio.start_server(self.handle_request, host, port)
+        await self.server.serve_forever()
+
+    async def read_request(self, reader: asyncio.StreamReader):
+        data = bytes()
+        msg_size = struct.calcsize("LL")
+        while len(data) < msg_size:
+            data += await reader.read(msg_size - len(data))
+        frame_offset, frame_count = struct.unpack("LL", data)
+        return frame_offset, frame_count
+
+    async def handle_request(
+        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+    ):
+        frame_offset, frame_count = await self.read_request(reader)
+        print(f"request: {frame_offset}-{frame_offset+frame_count-1}")
+
         raw_frames = []
-        for frame_number in range(FRAME_BATCH_SIZE):
-            data = get_raw_frame()
+        for frame_number in range(frame_offset, frame_offset + frame_count):
+            data = self.get_raw_frame(frame_number)
             if len(data) == 4:
                 # end of frames
                 break
@@ -32,23 +52,22 @@ def main():
             raw_frame = frame_number_raw + frame_size_raw + data
             raw_frames.append(raw_frame)
 
-        if len(raw_frames) == 0:
-            break
-
-        # Send message length first
         frame_count_raw = struct.pack("L", len(raw_frames))
-        packed_frames = struct.pack(''.join([str(len(x)) + 's' for x in raw_frames]), *raw_frames)
+        packed_frames = struct.pack(
+            "".join([str(len(x)) + "s" for x in raw_frames]), *raw_frames
+        )
         raw_message = frame_count_raw + packed_frames
-        # Then data
-        clientsocket.sendall(raw_message)
 
-        if len(raw_frames) != FRAME_BATCH_SIZE:
-            break
+        writer.write(raw_message)
+        await writer.drain()
+        writer.close()
 
-    raw_message = struct.pack("L", 0)
-    clientsocket.sendall(raw_message)
-    print("sended end of communication message")
+
+async def main():
+    server = Server()
+    await server.start_server(HOST, PORT)
+    await server.server.wait_closed()
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

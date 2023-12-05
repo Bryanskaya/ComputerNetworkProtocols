@@ -8,6 +8,7 @@ import cv2
 HOST = ""
 PORT = 8089
 
+WINNAME = "frame"
 CHUNK_SIZE = 4096
 
 
@@ -15,17 +16,6 @@ class ServerFetcher:
     def __init__(self) -> None:
         self.frame_buffer = asyncio.Queue()
         self.data = bytes()
-
-    async def start_server(self):
-        self.server = await asyncio.start_server(self.handle_conn, HOST, PORT)
-        await self.server.serve_forever()
-        print("Socket created")
-
-    async def handle_conn(self, reader, writer):
-        print("Socket bind complete")
-        print("Socket now listening")
-        self.reader = reader
-        await self.run()
 
     async def recv(self, n: int):
         return await self.reader.read(n)
@@ -36,9 +26,6 @@ class ServerFetcher:
         msg = self.data[:size]
         self.data = self.data[size:]
         return msg
-
-    def sync_run(self):
-        asyncio.run(self.run())
 
     async def fetch_frames(self):
         packed_frame_count = await self.recv_data(struct.calcsize("L"))
@@ -55,23 +42,28 @@ class ServerFetcher:
         return frames
 
     async def run(self):
+        frame_index = 0
         for i in range(10000):
+            self.reader, self.writer = await asyncio.open_connection(HOST, PORT)
+
+            self.writer.write(struct.pack("LL", frame_index, 16))
+            await self.writer.drain()
+
             frames = await self.fetch_frames()
             if len(frames) == 0:
-                print("recived end of communication message")
+                print(f"recived end of communication message {frame_index}")
+                break
 
             print(f"[{i}] recived {len(frames)} frames")
             for frame in frames:
                 await self.frame_buffer.put(frame)
-
-        self.server.close()
+                frame_index += 1
+            self.writer.close()
+            await self.writer.wait_closed()
 
 
 def run_fetcher(fetcher: ServerFetcher):
-    async def _run():
-        await fetcher.start_server()
-
-    asyncio.run(_run())
+    asyncio.run(fetcher.run())
 
 
 async def main():
@@ -92,12 +84,16 @@ async def main():
         if frame is None:
             break
 
-        print(f"[{i}] displaying frame, delay={time.time() - t}")
+        time_spent = time.time() - t
+        to_wait = max(0, 1 / 30 - time_spent)
+        print(f"[{i}] displaying frame, delay={time.time() - t:.3f}, {to_wait=:.3f}")
+        await asyncio.sleep(to_wait)
+
         t = time.time()
-        cv2.imshow("frame", frame)
+        cv2.imshow(WINNAME, frame)
         cv2.waitKey(1)
 
-    # cv2.imshow("frame", None)
+    cv2.destroyWindow(WINNAME)
     task.cancel()
 
 

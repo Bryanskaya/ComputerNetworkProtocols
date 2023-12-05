@@ -22,3 +22,5 @@ go.work
 
 # Latex
 .aux
+
+*.code-workspace
