@@ -24,3 +24,7 @@ go.work
 .aux
 
 *.code-workspace
+
+*_pb2_grpc.py
+*_pb2.py
+*_pb2.pyi

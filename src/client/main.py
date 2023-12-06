@@ -1,9 +1,12 @@
 from dataclasses import dataclass
 import asyncio
 import cv2
+import grpc
 import pickle
 import struct
 import time
+
+import master_server_pb2, master_server_pb2_grpc
 
 
 WINNAME = "frame"
@@ -84,8 +87,8 @@ class ServerFetcher:
 
 
 class DownloadMaster:
-    def __init__(self) -> None:
-        self.master_endpoint = None  # TODO
+    def __init__(self, master_endpoint: str) -> None:
+        self.master_endpoint = master_endpoint
         self.unfetched_distributions: list[FrameDistribution] = []
         self.fetchers: list[ServerFetcher] = []
 
@@ -101,16 +104,24 @@ class DownloadMaster:
             await self.run_next_fetcher()
 
     async def fetch_distibution(self):
-        # TODO
-        endpoints = [
-            "localhost:8090",
-            "localhost:8091",
+        async with grpc.aio.insecure_channel(self.master_endpoint) as channel:
+            stub = master_server_pb2_grpc.MasterServerStub(channel)
+            request = master_server_pb2.GetDistributionRequest(
+                # TODO
+                filename="Poopy-di-Scoop.mp4", 
+                beginFrame=0,
+                endFrame=500,
+            )
+            response: master_server_pb2.GetDistributionResponse = await stub.GetDistribution(request)
+
+        for distr in response.distribution:
+            print(f"{distr.endpoint}: {distr.beginFrame}-{distr.endFrame}")
+
+        self.unfetched_distributions += [
+            FrameDistribution(distr.endpoint, distr.beginFrame, distr.endFrame)
+            for distr in response.distribution
         ]
-        self.unfetched_distributions = [
-            FrameDistribution(endpoints[i % 2], i * 100, i * 100 + 99)
-            for i in range(0, 5)
-        ]
-        self.all_distibution_fetched = True
+        self.all_distibution_fetched = response.endOfFile
 
     async def run_next_fetcher(self) -> bool:
         if len(self.unfetched_distributions) == 0:
@@ -157,7 +168,7 @@ class DownloadMaster:
 
 
 async def main():
-    master = DownloadMaster()
+    master = DownloadMaster("localhost:50051")
     task = asyncio.create_task(asyncio.to_thread(master.sync_start))
 
     await asyncio.sleep(2)
