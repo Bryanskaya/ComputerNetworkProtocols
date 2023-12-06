@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  6 DEC 2023 00:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  7 DEC 2023 01:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -1642,18 +1642,33 @@ Overfull \hbox (0.94714pt too wide) in paragraph at lines 72--73
  []
 
 [8]
-Overfull \hbox (1.73659pt too wide) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+File: img/[all process].pdf Graphic file (type pdf)
+<use img/[all process].pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Overfull \hbox (1.73659pt too wide) in paragraph at lines 109--110
 []\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, в данной работе будет разрабатыв
 аться протокол для муль-
  []
 
 
-Overfull \hbox (3.63321pt too wide) in paragraph at lines 84--85
+Overfull \hbox (3.63321pt too wide) in paragraph at lines 109--110
 \TU/TimesNewRoman(0)/m/n/14.4 тисерверного видеостриминга с множественными исто
 чниками. В качестве фор-
  []
 
-) [9]
+) [11]
 \openout2 = `inc/20-design.aux'.
 
  (inc/20-design.tex
@@ -1665,11 +1680,11 @@ File: img/[items][master][auth].pdf Graphic file (type pdf)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
+[12
 
 
 
-] [11]
+] [13]
 File: img/[items][master][share].pdf Graphic file (type pdf)
 <use img/[items][master][share].pdf>
 
@@ -1682,12 +1697,12 @@ Overfull \hbox (3.0851pt too wide) in paragraph at lines 181--181
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
-[12]
+[14]
 Underfull \hbox (badness 1005) in paragraph at lines 208--209
 []|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
  []
 
-[13]
+[15]
 Overfull \hbox (3.0851pt too wide) in paragraph at lines 280--280
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
@@ -1708,7 +1723,7 @@ Underfull \hbox (badness 1005) in paragraph at lines 312--313
 []|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
  []
 
-[14]
+[16]
 Overfull \hbox (11.29597pt too wide) in paragraph at lines 351--352
 \TU/TimesNewRoman(0)/m/n/14.4 осуществляется одновременное скачивание сразу нес
 кольких частей видео-файла
@@ -1722,13 +1737,13 @@ Overfull \hbox (0.871pt too wide) in paragraph at lines 361--362
 ]) к медиа-серверам будут осуществ-
  []
 
-[15]
+[17]
 File: img/[items][media].pdf Graphic file (type pdf)
 <use img/[items][media].pdf>
- [16]) [17]
+ [18]) [19]
 \openout2 = `inc/50-conclusion.aux'.
 
- (inc/50-conclusion.tex) [18
+ (inc/50-conclusion.tex) [20
 
 
 
@@ -1741,14 +1756,14 @@ Underfull \hbox (badness 6204) in paragraph at lines 7--8
 hts.com/video-streaming-
  []
 
-) [19
+) [21
 
 
 
 ]
 \openout2 = `inc/70-application.aux'.
 
- (inc/70-application.tex) [20
+ (inc/70-application.tex) [22
 
 
 
@@ -1757,15 +1772,15 @@ AED: lastpage setting LastPage
 (main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
 (inc/50-conclusion.aux) (inc/60-bibliography.aux) (inc/70-application.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0A30ACB67138F45C13E1623F44CEB9ED;3075.
+(rerunfilecheck)             Checksum: 8BBDCA3FCA2DA2983D8CFB852B38A8F5;3773.
  ) 
 Here is how much of TeX's memory you used:
- 39508 strings out of 411059
- 920453 string characters out of 2830150
+ 39517 strings out of 411059
+ 920691 string characters out of 2830150
  1453849 words of memory out of 3000000
- 59457 multiletter control sequences out of 15000+600000
+ 59465 multiletter control sequences out of 15000+600000
  411468 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,17n,99p,729b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,17n,99p,738b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (22 pages).
