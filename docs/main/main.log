@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  7 DEC 2023 01:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  8 DEC 2023 01:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -1367,7 +1367,8 @@ LaTeX Warning: Unused global option(s):
     [ut8x].
 
 (main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
-(inc/50-conclusion.aux) (inc/60-bibliography.aux) (inc/70-application.aux))
+(inc/30-technology.aux) (inc/50-conclusion.aux) (inc/60-bibliography.aux)
+(inc/70-application.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1381,8 +1382,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 .
-
-(C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
+ (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 5.
@@ -1603,13 +1603,7 @@ Overfull \hbox (6.15733pt too wide) in paragraph at lines 23--24
 ]
 \openout2 = `inc/10-analysis.aux'.
 
- (inc/10-analysis.tex
-Overfull \hbox (10.69147pt too wide) in paragraph at lines 5--6
-\TU/TimesNewRoman(0)/m/n/14.4 должен ждать полной загрузки файла для просмотра.
- Видео транслируется непре-
- []
-
-[5
+ (inc/10-analysis.tex [5
 
 
 
@@ -1652,18 +1646,18 @@ File: img/[all process].pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Overfull \hbox (1.73659pt too wide) in paragraph at lines 109--110
+Overfull \hbox (1.73659pt too wide) in paragraph at lines 111--112
 []\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, в данной работе будет разрабатыв
 аться протокол для муль-
  []
 
 
-Overfull \hbox (3.63321pt too wide) in paragraph at lines 109--110
+Overfull \hbox (3.63321pt too wide) in paragraph at lines 111--112
 \TU/TimesNewRoman(0)/m/n/14.4 тисерверного видеостриминга с множественными исто
 чниками. В качестве фор-
  []
@@ -1672,11 +1666,15 @@ Overfull \hbox (3.63321pt too wide) in paragraph at lines 109--110
 \openout2 = `inc/20-design.aux'.
 
  (inc/20-design.tex
+Overfull \hbox (1.84602pt too wide) in paragraph at lines 6--7
+\TU/TimesNewRoman(0)/m/n/14.4 сервером осуществляется по gRPC, между клиентом и
+ медиа-серверами по UDP. 
+ []
+
 File: img/[general][master].pdf Graphic file (type pdf)
 <use img/[general][master].pdf>
 File: img/[items][master][auth].pdf Graphic file (type pdf)
 <use img/[items][master][auth].pdf>
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1688,43 +1686,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: img/[items][master][share].pdf Graphic file (type pdf)
 <use img/[items][master][share].pdf>
 
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 176--176
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 178--178
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 181--181
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 183--183
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 [14]
-Underfull \hbox (badness 1005) in paragraph at lines 208--209
+Underfull \hbox (badness 1005) in paragraph at lines 210--211
 []|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
  []
 
 [15]
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 280--280
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 282--282
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 285--285
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 287--287
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 
-Overfull \hbox (5.15726pt too wide) in paragraph at lines 289--290
+Overfull \hbox (5.15726pt too wide) in paragraph at lines 291--292
 []\TU/TimesNewRoman(0)/m/n/14.4 Отправляя «Запрос типа 2» клиент инициирует пов
 торную операцию опре-
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 312--313
+Underfull \hbox (badness 1005) in paragraph at lines 314--315
 []|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
  []
 
 [16]
-Overfull \hbox (11.29597pt too wide) in paragraph at lines 351--352
+Overfull \hbox (11.29597pt too wide) in paragraph at lines 353--354
 \TU/TimesNewRoman(0)/m/n/14.4 осуществляется одновременное скачивание сразу нес
 кольких частей видео-файла
  []
@@ -1732,18 +1730,69 @@ Overfull \hbox (11.29597pt too wide) in paragraph at lines 351--352
 File: img/[general][media].pdf Graphic file (type pdf)
 <use img/[general][media].pdf>
 
-Overfull \hbox (0.871pt too wide) in paragraph at lines 361--362
+Overfull \hbox (0.871pt too wide) in paragraph at lines 363--364
 \TU/TimesNewRoman(0)/m/n/14.4 лельные запросы («Запрос типа 3» таблица [][]8[][
 ]) к медиа-серверам будут осуществ-
  []
 
-[17]
 File: img/[items][media].pdf Graphic file (type pdf)
 <use img/[items][media].pdf>
- [18]) [19]
+[17] [18]) [19]
+\openout2 = `inc/30-technology.aux'.
+
+ (inc/30-technology.tex
+Overfull \hbox (16.16586pt too wide) in paragraph at lines 4--6
+[]\TU/TimesNewRoman(0)/m/n/14.4 В качестве языка программирования был выбран Py
+thon 3 [[]], ввиду несколь-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+LaTeX Warning: Citation `discord' on page 20 undefined on input line 19.
+
+[20
+
+
+
+]
+
+LaTeX Warning: Citation `discordS' on page 21 undefined on input line 23.
+
+
+LaTeX Warning: Citation `pyqt5' on page 21 undefined on input line 28.
+
+
+LaTeX Warning: Citation `qt' on page 21 undefined on input line 28.
+
+
+LaTeX Warning: Citation `qtdesigner' on page 21 undefined on input line 28.
+
+
+LaTeX Warning: Citation `networkx' on page 21 undefined on input line 30.
+
+
+LaTeX Warning: Citation `speech_rec' on page 21 undefined on input line 32.
+
+
+LaTeX Warning: Citation `natasha' on page 21 undefined on input line 34.
+
+[21]
+
+LaTeX Warning: Citation `scipy' on page 22 undefined on input line 43.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+) [22]
 \openout2 = `inc/50-conclusion.aux'.
 
- (inc/50-conclusion.tex) [20
+ (inc/50-conclusion.tex) [23
 
 
 
@@ -1756,31 +1805,71 @@ Underfull \hbox (badness 6204) in paragraph at lines 7--8
 hts.com/video-streaming-
  []
 
-) [21
+
+Underfull \hbox (badness 7133) in paragraph at lines 9--10
+[]\TU/TimesNewRoman(0)/m/n/14.4 Пакулова Екатерина Анатольевна Алгоритм распред
+еления потоково-
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/14.4 го трафика и трафика реального времени в гетероге
+нной беспровод-
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/14.4 ной сети // Известия ЮФУ. Технические науки. 2014
+. №2 (151). URL:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/14.4 https://cyberleninka.ru/article/n/algoritm-raspre
+deleniya-potokovogo-trafika-i-
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/14.4 trafika-realnogo-vremeni-v-geterogennoy-besprovod
+noy-seti (дата обращения:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\TU/TimesNewRoman(0)/m/n/14.4 Документация по Python 3 [Электронный ресурс]. 
+Режим доступа:
+ []
+
+) [24
 
 
 
 ]
 \openout2 = `inc/70-application.aux'.
 
- (inc/70-application.tex) [22
+ (inc/70-application.tex) [25
 
 
 
 ] 
 AED: lastpage setting LastPage
 (main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
-(inc/50-conclusion.aux) (inc/60-bibliography.aux) (inc/70-application.aux))
+(inc/30-technology.aux) (inc/50-conclusion.aux) (inc/60-bibliography.aux)
+(inc/70-application.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8BBDCA3FCA2DA2983D8CFB852B38A8F5;3773.
+(rerunfilecheck)             Checksum: 8426A05A34EA34AA7520869711FC1F0F;5058.
  ) 
 Here is how much of TeX's memory you used:
- 39517 strings out of 411059
- 920691 string characters out of 2830150
+ 39551 strings out of 411059
+ 921742 string characters out of 2830150
  1453849 words of memory out of 3000000
- 59465 multiletter control sequences out of 15000+600000
+ 59492 multiletter control sequences out of 15000+600000
  411468 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,17n,99p,738b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (22 pages).
+Output written on main.pdf (25 pages).
