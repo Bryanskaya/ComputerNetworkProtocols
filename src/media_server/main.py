@@ -1,6 +1,6 @@
 import argparse
 import asyncio
-import socket
+import os
 import pickle
 import struct
 
@@ -8,16 +8,15 @@ import cv2
 
 
 CHUNK_SIZE = 4096
-INPUT_FILE = "/Users/ivavse/temp/nets/Poopy-di-Scoop.mp4"
+MEDIA_DIRECTORY = "/Users/ivavse/temp/nets/"
 
 
 class Server:
     def __init__(self) -> None:
-        self.stream = cv2.VideoCapture(filename=INPUT_FILE)
+        pass
 
-    def get_raw_frame(self, offset: int) -> bytes:
-        self.stream.set(cv2.CAP_PROP_POS_FRAMES, offset)
-        ret, frame = self.stream.read()
+    def get_raw_frame(self, stream: cv2.VideoCapture) -> bytes:
+        ret, frame = stream.read()
         data = pickle.dumps(frame)
         return data
 
@@ -28,23 +27,29 @@ class Server:
 
     async def read_request(self, reader: asyncio.StreamReader):
         data = bytes()
-        msg_size = struct.calcsize("LL")
+        msg_format = "LL64s"
+        msg_size = struct.calcsize(msg_format)
         while len(data) < msg_size:
             data += await reader.read(msg_size - len(data))
-        frame_offset, frame_count = struct.unpack("LL", data)
-        return frame_offset, frame_count
+        frame_offset, frame_count, raw_filename = struct.unpack(msg_format, data)
+        filename = bytes(raw_filename).rstrip(b'\x00').decode("utf-8")
+        return frame_offset, frame_count, filename
 
     async def handle_request(
         self,
         reader: asyncio.StreamReader,
         writer: asyncio.StreamWriter,
     ):
-        frame_offset, frame_count = await self.read_request(reader)
-        print(f"request: {frame_offset}-{frame_offset+frame_count-1}")
+        frame_offset, frame_count, filename = await self.read_request(reader)
+        print(f"request: {filename=}, frames:{frame_offset}-{frame_offset+frame_count-1}")
+
+        filepath = os.path.join(MEDIA_DIRECTORY, filename)
+        stream = cv2.VideoCapture(filepath)
+        stream.set(cv2.CAP_PROP_POS_FRAMES, frame_offset)
 
         raw_frames = []
         for frame_number in range(frame_offset, frame_offset + frame_count):
-            data = self.get_raw_frame(frame_number)
+            data = self.get_raw_frame(stream)
             if len(data) == 4:
                 # end of frames
                 break

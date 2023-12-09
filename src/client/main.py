@@ -1,3 +1,4 @@
+import argparse
 from dataclasses import dataclass
 import asyncio
 import cv2
@@ -17,6 +18,7 @@ FRAME_DELAY = 1 / FRAME_RATE
 
 @dataclass
 class FrameDistribution:
+    filename: str
     endpoint: str
     begin_frame: int
     end_frame: int
@@ -25,7 +27,7 @@ class FrameDistribution:
 class ServerFetcher:
     def __init__(self, distribution: FrameDistribution) -> None:
         self.distribution = distribution
-        self.batch_size = 10
+        self.batch_size = 20
         self.frame_buffer = asyncio.Queue()
         self.data = bytes()
         self.all_fetched = False
@@ -67,7 +69,8 @@ class ServerFetcher:
         ):
             self.reader, self.writer = await asyncio.open_connection(host, port)
 
-            self.writer.write(struct.pack("LL", frame_index, self.batch_size))
+            raw_filename = self.distribution.filename.encode("utf-8")
+            self.writer.write(struct.pack("LL64s", frame_index, self.batch_size, raw_filename))
             await self.writer.drain()
 
             frames = await self.fetch_frames()
@@ -87,13 +90,17 @@ class ServerFetcher:
 
 
 class DownloadMaster:
-    def __init__(self, master_endpoint: str) -> None:
+    def __init__(self, filename: str, master_endpoint: str) -> None:
+        self.filename = filename
         self.master_endpoint = master_endpoint
+
         self.unfetched_distributions: list[FrameDistribution] = []
         self.fetchers: list[ServerFetcher] = []
-
         self.all_distibution_fetched = False
-        self.fetchers_n = 2
+        self.first_undistributed_frame = 0
+
+        self.distibution_size = 2000
+        self.fetchers_n = 6
 
     def sync_start(self):
         asyncio.run(self.start())
@@ -107,10 +114,9 @@ class DownloadMaster:
         async with grpc.aio.insecure_channel(self.master_endpoint) as channel:
             stub = master_server_pb2_grpc.MasterServerStub(channel)
             request = master_server_pb2.GetDistributionRequest(
-                # TODO
-                filename="Poopy-di-Scoop.mp4", 
-                beginFrame=0,
-                endFrame=500,
+                filename=self.filename,
+                beginFrame=self.first_undistributed_frame,
+                endFrame=self.first_undistributed_frame+self.distibution_size,
             )
             response: master_server_pb2.GetDistributionResponse = await stub.GetDistribution(request)
 
@@ -118,9 +124,10 @@ class DownloadMaster:
             print(f"{distr.endpoint}: {distr.beginFrame}-{distr.endFrame}")
 
         self.unfetched_distributions += [
-            FrameDistribution(distr.endpoint, distr.beginFrame, distr.endFrame)
+            FrameDistribution(self.filename, distr.endpoint, distr.beginFrame, distr.endFrame)
             for distr in response.distribution
         ]
+        self.first_undistributed_frame += self.distibution_size
         self.all_distibution_fetched = response.endOfFile
 
     async def run_next_fetcher(self) -> bool:
@@ -168,10 +175,15 @@ class DownloadMaster:
 
 
 async def main():
-    master = DownloadMaster("localhost:50051")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--file", type=str, default="Poopy-di-Scoop.mp4", help="Requested video file name")
+    parser.add_argument("--master-endpoint", type=str, default="localhost:8080", help="Master server endpoint")
+    args = parser.parse_args()
+
+    master = DownloadMaster(args.file, args.master_endpoint)
     task = asyncio.create_task(asyncio.to_thread(master.sync_start))
 
-    await asyncio.sleep(2)
+    await asyncio.sleep(5)
     print("start display loop")
     t = time.time()
     for i in range(10000):
