@@ -10,8 +10,7 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Общая схема}{12}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Авторизация}{12}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Получение списка хостов}{14}{subsubsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.2}Взаимодействия клиента и медиа-сервером}{17}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Получение видеофрагментов}{17}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.4}Получение видеофрагментов}{17}{subsubsection.2.1.4}%
 \contentsline {section}{\numberline {3}Технологическая часть}{20}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Выбор средств программной реализации}{20}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Основные средства}{20}{subsubsection.3.1.1}%
