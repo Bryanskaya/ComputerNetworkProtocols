@@ -14,8 +14,7 @@
 \contentsline {section}{\numberline {3}Технологическая часть}{20}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Выбор средств программной реализации}{20}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Основные средства}{20}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Вспомогательные средства}{21}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Используемые библиотеки}{21}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Используемые библиотеки}{20}{subsection.3.2}%
 \contentsline {section}{ЗАКЛЮЧЕНИЕ}{22}{subsection.3.2}%
 \contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{23}{subsection.3.2}%
 \contentsline {section}{ПРИЛОЖЕНИЕ A}{24}{subsection.3.2}%

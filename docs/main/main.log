@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  9 DEC 2023 09:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.10) (preloaded format=xelatex 2021.12.1)  14 DEC 2023 18:21
 entering extended mode
 **./main.tex
 (main.tex
@@ -1636,6 +1636,12 @@ Overfull \hbox (0.94714pt too wide) in paragraph at lines 72--73
  []
 
 [8]
+Overfull \hbox (5.18704pt too wide) in paragraph at lines 81--82
+\TU/TimesNewRoman(0)/m/n/14.4 этому в демонстративных целях будет использоватьс
+я только MP4, другие видео-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -1645,27 +1651,21 @@ File: img/[all process].pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
-Overfull \hbox (15.15222pt too wide) in paragraph at lines 98--99
-[]\TU/TimesNewRoman(0)/m/n/14.4 Сначала клиент должен пройти процесс авторизаци
-и (метка 1), после успеш-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Overfull \hbox (2.33424pt too wide) in paragraph at lines 109--110
-[]\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, в данной работе будет рассматрив
+Overfull \hbox (1.73659pt too wide) in paragraph at lines 111--112
+[]\TU/TimesNewRoman(0)/m/n/14.4 Таким образом, в данной работе будет разрабатыв
 аться протокол для муль-
  []
 
 
-Overfull \hbox (23.23517pt too wide) in paragraph at lines 111--112
-\TU/TimesNewRoman(0)/m/n/14.4 тельность шагов взаимодействия между основными эл
-ементами: клиентом, мастер-
+Overfull \hbox (3.63321pt too wide) in paragraph at lines 111--112
+\TU/TimesNewRoman(0)/m/n/14.4 тисерверного видеостриминга с множественными исто
+чниками. В качестве фор-
  []
 
 ) [11]
@@ -1707,28 +1707,22 @@ Underfull \hbox (badness 1005) in paragraph at lines 210--211
  []
 
 [15]
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 282--282
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 
-Overfull \hbox (3.0851pt too wide) in paragraph at lines 287--287
+Overfull \hbox (3.0851pt too wide) in paragraph at lines 307--307
 []|\TU/TimesNewRoman(0)/m/n/14.4 timestamp| 
  []
 
 
-Overfull \hbox (5.15726pt too wide) in paragraph at lines 291--292
-[]\TU/TimesNewRoman(0)/m/n/14.4 Отправляя «Запрос типа 2» клиент инициирует пов
-торную операцию опре-
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 314--315
+Underfull \hbox (badness 1005) in paragraph at lines 334--335
 []|\TU/TimesNewRoman(0)/m/n/14.4 Список хостов с указанием адреса и
  []
 
 [16]
-Overfull \hbox (11.29597pt too wide) in paragraph at lines 353--354
+Overfull \hbox (11.29597pt too wide) in paragraph at lines 373--374
 \TU/TimesNewRoman(0)/m/n/14.4 осуществляется одновременное скачивание сразу нес
 кольких частей видео-файла
  []
@@ -1736,17 +1730,12 @@ Overfull \hbox (11.29597pt too wide) in paragraph at lines 353--354
 File: img/[general][media].pdf Graphic file (type pdf)
 <use img/[general][media].pdf>
 
-Overfull \hbox (0.871pt too wide) in paragraph at lines 363--364
-\TU/TimesNewRoman(0)/m/n/14.4 лельные запросы («Запрос типа 3» таблица [][]8[][
-]) к медиа-серверам будут осуществ-
- []
-
-File: img/[items][media].pdf Graphic file (type pdf)
-<use img/[items][media].pdf>
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18]) [19]
+[17]
+File: img/[items][media].pdf Graphic file (type pdf)
+<use img/[items][media].pdf>
+ [18]) [19]
 \openout2 = `inc/30-technology.aux'.
 
  (inc/30-technology.tex
@@ -1765,6 +1754,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 [20
 
 
@@ -1772,7 +1766,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 ]) [21]
 \openout2 = `inc/50-conclusion.aux'.
 
- (inc/50-conclusion.tex) [22
+ (inc/50-conclusion.tex
+Overfull \hbox (3.92142pt too wide) in paragraph at lines 11--12
+[]\TU/TimesNewRoman(0)/m/n/14.4 Разработан и протестирован соответствующий прот
+отип приложения, поз-
+ []
+
+) [22
 
 
 
@@ -1816,9 +1816,27 @@ noy-seti (дата обращения:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 []\TU/TimesNewRoman(0)/m/n/14.4 Документация по Python 3 [Электронный ресурс]. 
 Режим доступа:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\TU/TimesNewRoman(0)/m/n/14.4 Документация OpenCV [Электронный ресурс]. Режим
+ доступа:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\TU/TimesNewRoman(0)/m/n/14.4 https://docs.opencv.org/3.4/d6/d00/tutorial_py_ro
+ot.html (Дата обращения
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]\TU/TimesNewRoman(0)/m/n/14.4 Документация gRPC [Электронный ресурс]. Режим д
+оступа:
  []
 
 ) [23
@@ -1828,25 +1846,1959 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 ]
 \openout2 = `inc/70-application.aux'.
 
- (inc/70-application.tex) [24
+ (inc/70-application.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 5.
+ (../../src/master_server.proto
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 syntax = "
+              proto3";
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 syntax = "proto3"
+                     ;
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 syntax = "proto3"
+                     ;
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (code/client_lst.py [24
 
 
 
-] 
+]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...t = await self.recv_data(struct.calcsize("
+                                                  L"))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...= await self.recv_data(struct.calcsize("L"
+                                                  ))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...= await self.recv_data(struct.calcsize("L"
+                                                  ))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29         frame_count = struct.unpack("
+                                          L", packed_frame_count)[0]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29         frame_count = struct.unpack("L"
+                                            , packed_frame_count)[0]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29         frame_count = struct.unpack("L"
+                                            , packed_frame_count)[0]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...a = await self.recv_data(struct.calcsize("
+                                                  LL"))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ... await self.recv_data(struct.calcsize("LL"
+                                                  ))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ... await self.recv_data(struct.calcsize("LL"
+                                                  ))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...frame_number, frame_size = struct.unpack("
+                                                  LL", packed_frame_meta)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...me_number, frame_size = struct.unpack("LL"
+                                                  , packed_frame_meta)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...me_number, frame_size = struct.unpack("LL"
+                                                  , packed_frame_meta)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ... port = self.distribution.endpoint.split("
+                                                  :")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...ort = self.distribution.endpoint.split(":"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...ort = self.distribution.endpoint.split(":"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[25]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ...name = self.distribution.filename.encode("
+                                                  utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ... = self.distribution.filename.encode("utf-
+                                                  8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ... self.distribution.filename.encode("utf-8"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ... self.distribution.filename.encode("utf-8"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55             self.writer.write(struct.pack("
+                                                LL64s", frame_index, self.ba...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...     self.writer.write(struct.pack("LL64s"
+                                                  , frame_index, self.batch_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...     self.writer.write(struct.pack("LL64s"
+                                                  , frame_index, self.batch_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"
+                             recived end of communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived 
+                                     end of communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived 
+                                     end of communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived end 
+                                         of communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived end 
+                                         of communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived end of 
+                                            communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60                 print(f"recived end of 
+                                            communication message {frame_ind...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...     print(f"recived end of communication 
+                                                  message {frame_index}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...     print(f"recived end of communication 
+                                                  message {frame_index}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...nt(f"recived end of communication message 
+                                                  {frame_index}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...nt(f"recived end of communication message 
+                                                  {frame_index}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...(f"recived end of communication message {f
+                                                  rame_index}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...end of communication message {frame_index}
+                                                  ")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...nd of communication message {frame_index}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...nd of communication message {frame_index}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"
+                         recived frames: {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived 
+                                 frames: {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived 
+                                 frames: {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived frames:
+                                         {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived frames: 
+                                         {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived frames: 
+                                         {frame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             print(f"recived frames: {f
+                                           rame_index}-{frame_index+len(fram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...     print(f"recived frames: {frame_index}
+                                                  -{frame_index+len(frames)-...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...  print(f"recived frames: {frame_index}-{f
+                                                  rame_index+len(frames)-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...ecived frames: {frame_index}-{frame_index+
+                                                  len(frames)-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...cived frames: {frame_index}-{frame_index+l
+                                                  en(frames)-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...ed frames: {frame_index}-{frame_index+len(
+                                                  frames)-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...d frames: {frame_index}-{frame_index+len(f
+                                                  rames)-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...es: {frame_index}-{frame_index+len(frames)
+                                                  -1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...es: {frame_index}-{frame_index+len(frames)
+                                                  -1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...{frame_index}-{frame_index+len(frames)-1}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...{frame_index}-{frame_index+len(frames)-1}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"
+                          {distr.endpoint}: {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{d
+                            istr.endpoint}: {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.
+                                 endpoint}: {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.e
+                                  ndpoint}: {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.endpoint}
+                                          : {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.endpoint}: 
+                                            {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.endpoint}: 
+                                            {distr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106             print(f"{distr.endpoint}: {d
+                                              istr.beginFrame}-{distr.endFra...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...        print(f"{distr.endpoint}: {distr.
+                                                  beginFrame}-{distr.endFram...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...       print(f"{distr.endpoint}: {distr.b
+                                                  eginFrame}-{distr.endFrame}")
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...nt(f"{distr.endpoint}: {distr.beginFrame}
+                                                  -{distr.endFrame}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...f"{distr.endpoint}: {distr.beginFrame}-{d
+                                                  istr.endFrame}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...str.endpoint}: {distr.beginFrame}-{distr.
+                                                  endFrame}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...tr.endpoint}: {distr.beginFrame}-{distr.e
+                                                  ndFrame}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...int}: {distr.beginFrame}-{distr.endFrame}
+                                                  ")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...nt}: {distr.beginFrame}-{distr.endFrame}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 ...nt}: {distr.beginFrame}-{distr.endFrame}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[27]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134             print(f"
+                          {done_fetcher.distribution=}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134             print(f"{d
+                            one_fetcher.distribution=}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134             print(f"{done_fetcher.
+                                        distribution=}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134             print(f"{done_fetcher.d
+                                         istribution=}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...      print(f"{done_fetcher.distribution=
+                                                  }")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...    print(f"{done_fetcher.distribution=}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...    print(f"{done_fetcher.distribution=}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (code/master_lst.py [28]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"
+          localhost:{port}"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"localhost:
+                    {port}"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"localhost:{p
+                      ort}"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"localhost:{port}
+                          "
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"localhost:{port}"
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     f"localhost:{port}"
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "
+                       /Users/ivavse/temp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/U
+                         sers/ivavse/temp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/i
+                               vavse/temp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/i
+                               vavse/temp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/t
+                                      emp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/t
+                                      emp/nets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/temp/n
+                                           ets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/temp/n
+                                           ets/"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/temp/nets/"
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/temp/nets/"
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 MEDIA_DIRECTORY = "/Users/ivavse/temp/nets/"
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [29] (code/media_lst.py
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"
+                    server started on the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server 
+                           started on the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server 
+                           started on the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started 
+                                   on the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started 
+                                   on the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started on 
+                                      the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started on 
+                                      the endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started on the 
+                                          endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9         print(f"server started on the 
+                                          endpoint {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...    print(f"server started on the endpoint 
+                                                  {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...    print(f"server started on the endpoint 
+                                                  {host}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...  print(f"server started on the endpoint {h
+                                                  ost}:{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...int(f"server started on the endpoint {host}
+                                                  :{port}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...(f"server started on the endpoint {host}:{p
+                                                  ort}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...erver started on the endpoint {host}:{port}
+                                                  ")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...rver started on the endpoint {host}:{port}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...rver started on the endpoint {host}:{port}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14         msg_format = "
+                           LL64s"
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14         msg_format = "LL64s"
+                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14         msg_format = "LL64s"
+                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...  filename = bytes(raw_filename).rstrip(b'
+                                                  \x00').decode("utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...filename = bytes(raw_filename).rstrip(b'\x
+                                                  00').decode("utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...ename = bytes(raw_filename).rstrip(b'\x00'
+                                                  ).decode("utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...ename = bytes(raw_filename).rstrip(b'\x00'
+                                                  ).decode("utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...tes(raw_filename).rstrip(b'\x00').decode("
+                                                  utf-8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...raw_filename).rstrip(b'\x00').decode("utf-
+                                                  8")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...w_filename).rstrip(b'\x00').decode("utf-8"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...w_filename).rstrip(b'\x00').decode("utf-8"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"
+                     request: {filename=}, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request:
+                              {filename=}, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: 
+                              {filename=}, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: 
+                              {filename=}, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: {f
+                                ilename=}, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: {filename=
+                                        }, frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: {filename=}, 
+                                           frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: {filename=}, 
+                                           frames:{frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28         print(f"request: {filename=}, frames:
+                                                  {frame_offset}-{frame_offs...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...   print(f"request: {filename=}, frames:{f
+                                                  rame_offset}-{frame_offset...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...equest: {filename=}, frames:{frame_offset}
+                                                  -{frame_offset+frame_count...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...est: {filename=}, frames:{frame_offset}-{f
+                                                  rame_offset+frame_count-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...me=}, frames:{frame_offset}-{frame_offset+
+                                                  frame_count-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...e=}, frames:{frame_offset}-{frame_offset+f
+                                                  rame_count-1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...:{frame_offset}-{frame_offset+frame_count-
+                                                  1}")
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...rame_offset}-{frame_offset+frame_count-1}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...rame_offset}-{frame_offset+frame_count-1}"
+                                                  )
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[30]
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40             frame_number_raw = struct.pack("
+                                                 L", frame_number)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...        frame_number_raw = struct.pack("L"
+                                                  , frame_number)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...        frame_number_raw = struct.pack("L"
+                                                  , frame_number)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41             frame_size_raw = struct.pack("
+                                               L", len(data))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41             frame_size_raw = struct.pack("L"
+                                                 , len(data))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41             frame_size_raw = struct.pack("L"
+                                                 , len(data))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45         frame_count_raw = struct.pack("
+                                            L", len(raw_frames))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45         frame_count_raw = struct.pack("L"
+                                              , len(raw_frames))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45         frame_count_raw = struct.pack("L"
+                                              , len(raw_frames))
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47             "
+                  ".join([str(len(x)) + "s" for x in raw_frames]), *raw_frames
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47             ""
+                   .join([str(len(x)) + "s" for x in raw_frames]), *raw_frames
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47             "".join([str(len(x)) + "
+                                         s" for x in raw_frames]), *raw_frames
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47             "".join([str(len(x)) + "s"
+                                            for x in raw_frames]), *raw_frames
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `string'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47             "".join([str(len(x)) + "s"
+                                            for x in raw_frames]), *raw_frames
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)) [31] 
 AED: lastpage setting LastPage
 (main.aux (inc/03-intro.aux) (inc/10-analysis.aux) (inc/20-design.aux)
 (inc/30-technology.aux) (inc/50-conclusion.aux) (inc/60-bibliography.aux)
 (inc/70-application.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8426A05A34EA34AA7520869711FC1F0F;5058.
+(rerunfilecheck)             Checksum: 8C0A9EAA74EC2D036484CDCBEA3498DA;4798.
  ) 
 Here is how much of TeX's memory you used:
- 39553 strings out of 411059
- 921775 string characters out of 2830150
- 1453850 words of memory out of 3000000
- 59494 multiletter control sequences out of 15000+600000
- 411468 words of font info for 99 fonts, out of 8000000 for 9000
+ 40046 strings out of 411059
+ 928318 string characters out of 2830150
+ 1793850 words of memory out of 3000000
+ 59970 multiletter control sequences out of 15000+600000
+ 411476 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,17n,99p,738b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,17n,99p,738b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (24 pages).
+Output written on main.pdf (31 pages).
