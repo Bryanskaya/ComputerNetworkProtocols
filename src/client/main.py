@@ -200,15 +200,15 @@ async def main():
 
         time_spent = time.time() - t
         to_wait = max(0, FRAME_DELAY - time_spent)
-        if to_wait == 0:
+        if time_spent > FRAME_DELAY * 2:
             print(f"frame {i}, DELAY IS TOO BIG: {time_spent:.3f} sec")
         await asyncio.sleep(to_wait)
 
         t = time.time()
-        cv2.imshow(WINNAME, frame)
+        cv2.imshow(args.file, frame)
         cv2.waitKey(1)
 
-    cv2.destroyWindow(WINNAME)
+    cv2.destroyWindow(args.file)
     task.cancel()
 
 
